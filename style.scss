@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+$font: "Montserrat", "Fira Code";
+$dark: rgb(41, 41, 41);
+$light: rgb(255, 255, 255);
+
+body {
+  font-family: $font;
+  font-size: 16px;
+}
+
+.budget {
+  text-align: center;
+  height: 100vh;
+
+  h1 {
+    // padding: 20px;
+    background: $dark;
+    color: $light;
+    font-weight: 400;
+    letter-spacing: 3px;
+    position: fixed;
+    width: 100%;
+    padding: 20px 0px;
+  }
+}
+
+.grid-container {
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  position: relative;
+
+  &__expenses,
+  &__bank {
+    min-height: 50%;
+    background: $dark;
+    color: $light;
+  }
+
+  &__revenues {
+    min-height: 50%;
+    border: 5px solid $dark;
+  }
+
+  .top {
+    background: rgb(187, 181, 194);
+    padding: 20px 0px;
+  }
+}
+
+.template {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inp {
+  padding: 20px 15px;
+}
+
+.wrapper {
+  margin: 10px auto;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid #aaa;
+  font-family: $font;
+  padding: 15px 60px;
+  cursor: pointer;
+}
+
+.light {
+  color: $light;
+}
