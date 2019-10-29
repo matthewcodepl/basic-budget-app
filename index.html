@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> -->
 
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> -->
 
-  <body>
-    <div class="budget">
-      <h1>
-        My budget app in vanilla javascript
-      </h1>
-      <div class="grid-container">
-          <div class="grid-container__bank">
-              <header class="top">
-                <h2>
-                  Stan konta
-                </h2>
-              </header>
-              <div class="template">
-                <h3>
-                  Twój stan konta to... <span id="all"></span>
-                </h3>
-              </div>
-            </div>
-        <div class="grid-container__expenses">
-          <header class="top">
-            <h2>
-              Wydatki
-            </h2>
-          </header>
-          <div class="template">
-            <h3>
-              Jakie są Twoje wydatki?
-            </h3>
-            <div class="wrapper">
-              <input class="inp" id="name_1" name="name" type="text" placeholder="nazwa" />
-              <input class="inp" id="amount" type="text" placeholder="kwota" />
-            </div>
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
 
-            <input class="btn light" id="btn1" type="button" value="Ok" />
-            <p>
-              <span id="name-res"></span>
-            </p>
-          </div>
+<body>
+  <div class="budget">
+    <h1>
+      My budget app in vanilla javascript
+    </h1>
+    <div class="grid-container">
+      <div class="grid-container__bank">
+        <header class="top">
+          <h2>
+            Stan konta
+          </h2>
+        </header>
+        <div class="template">
+          <h3>
+            Twój stan konta to <span id="all"></span>
+          </h3>
         </div>
-        <div class="grid-container__revenues">
-          <header class="top">
-            <h2>
-              Przychody
-            </h2>
-          </header>
-          <div class="template">
-            <h3>
-              Ostatnie przychody
-              <div class="wrapper">
-                <input class="inp" id="name_2" type="text" placeholder="nazwa" />
-                <input class="inp" id="amount_2" type="text" placeholder="kwota" />
-              </div>  
+      </div>
+      <div class="grid-container__expenses">
+        <header class="top">
+          <h2>
+            Wydatki
+          </h2>
+        </header>
+        <div class="template">
+          <h3>
+            Jakie są Twoje wydatki?
+          </h3>
+          <div class="wrapper">
+            <input class="inp" id="name_1" name="name" type="text" placeholder="nazwa" />
+            <input class="inp" id="amount" type="number" placeholder="kwota" />
+          </div>
+
+          <input class="btn light" id="btn1" type="button" value="Ok" />
+          <p>
+            <span id="name-res"></span>
+          </p>
+        </div>
+      </div>
+      <div class="grid-container__revenues">
+        <header class="top">
+          <h2>
+            Przychody
+          </h2>
+        </header>
+        <div class="template">
+          <h3>
+            Ostatnie przychody
+            <div class="wrapper">
+              <input class="inp" id="name_2" type="text" placeholder="nazwa" />
+              <input class="inp" id="amount_2" type="number" placeholder="kwota" />
+            </div>
             <input class="btn" id="btn2" type="button" value="Ok" />
             <p><span id="name-res-2"></span></p>
-          </div>
         </div>
-       
       </div>
+
     </div>
-    <script src="js/main.js"></script>
-  </body>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

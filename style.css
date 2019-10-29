@@ -40,7 +40,12 @@ body {
 
 .grid-container__revenues {
   min-height: 50%;
-  border: 5px solid #292929;
+  background: #292929;
+  color: white;
+}
+
+.grid-container__revenues .btn {
+  color: white;
 }
 
 .grid-container .top {

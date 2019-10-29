@@ -43,7 +43,11 @@ body {
 
   &__revenues {
     min-height: 50%;
-    border: 5px solid $dark;
+    background: $dark;
+    color: $light;
+    .btn {
+      color: $light;
+    }
   }
 
   .top {
